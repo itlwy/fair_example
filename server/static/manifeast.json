@@ -1,0 +1,17 @@
+{
+  "version": 1.0,
+  "bundles": [
+    {
+      "name": "lib_pages_form_page",
+      "location": "./bundles/lib_pages_form_page.fair.json"
+    },
+    {
+      "name": "lib_pages_best_flutter_page",
+      "location": "./bundles/lib_pages_best_flutter_page.fair.json"
+    },
+    {
+      "name": "lib_home_home_page",
+      "location": "./bundles/lib_home_home_page.fair.json"
+    }
+  ]
+}

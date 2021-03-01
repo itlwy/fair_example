@@ -1,0 +1,73 @@
+{
+  "className": "DefaultTabController",
+  "na": {
+    "length": "#(delegate.tabLength)",
+    "child": {
+      "className": "Scaffold",
+      "na": {
+        "appBar": {
+          "className": "AppBar",
+          "na": {
+            "title": {
+              "className": "Text",
+              "pa": [
+                "#(delegate.content)"
+              ]
+            },
+            "bottom": {
+              "className": "TabBar",
+              "na": {
+                "tabs": {
+                  "className": "Sugar.map",
+                  "pa": [
+                    "#(delegate.tabs)"
+                  ],
+                  "na": {
+                    "builder": {
+                      "className": "Tab",
+                      "na": {
+                        "child": {
+                          "className": "Text",
+                          "pa": [
+                            "item"
+                          ],
+                          "na": {
+                            "style": {
+                              "className": "TextStyle",
+                              "na": {
+                                "color": "#(Colors.white)"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "body": {
+          "className": "TabBarView",
+          "na": {
+            "children": {
+              "className": "Sugar.map",
+              "pa": [
+                "#(delegate.dataSources)"
+              ],
+              "na": {
+                "builder": {
+                  "className": "ListContainer",
+                  "pa": [
+                    "item"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
