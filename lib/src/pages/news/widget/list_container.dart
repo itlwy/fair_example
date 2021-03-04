@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'list_item.dart';
 
-@FairBinding()
+@FairBinding(packages: ['package:smooth_star_rating/smooth_star_rating.dart'])
 class ListContainer extends StatelessWidget {
   final List<NewsModel> datas;
 

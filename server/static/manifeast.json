@@ -1,17 +1,19 @@
 {
   "version": 1.0,
-  "bundles": [
+  "routes": [
     {
-      "name": "lib_pages_form_page",
-      "location": "./bundles/lib_pages_form_page.fair.json"
+      "url": "/fair/form/demo1",
+      "delegateName": "lib_pages_form_page",
+      "bundleLocation": "./bundles/lib_src_pages_form_form_page.fair.json"
     },
     {
-      "name": "lib_pages_best_flutter_page",
-      "location": "./bundles/lib_pages_best_flutter_page.fair.json"
+      "url": "/fair/news/demo1",
+      "delegateName": "news_home_page_delegate",
+      "bundleLocation": "./bundles/lib_src_pages_news_news_home.fair.json"
     },
     {
-      "name": "lib_home_home_page",
-      "location": "./bundles/lib_home_home_page.fair.json"
+      "delegateName": "form_page_delegate",
+      "bundleLocation": "./bundles/lib_home_home_page.fair.json"
     }
   ]
 }

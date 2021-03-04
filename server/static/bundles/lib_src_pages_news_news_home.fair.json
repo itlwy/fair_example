@@ -11,7 +11,7 @@
             "title": {
               "className": "Text",
               "pa": [
-                "#(delegate.content)"
+                "#(delegate.title)"
               ]
             },
             "bottom": {

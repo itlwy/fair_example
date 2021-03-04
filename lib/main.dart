@@ -1,6 +1,9 @@
 import 'package:fair/fair.dart';
+import 'package:fair_example/src/pages/form/form_delegate.dart';
+import 'package:fair_example/src/pages/form/form_page.dart';
 import 'package:flutter/material.dart';
 
+import 'src/fair_modules/fair_form_modules.dart';
 import 'src/fair_modules/fair_modules.dart';
 import 'src/generated.fair.dart';
 import 'src/home/home_page_delegate.dart';
@@ -8,11 +11,13 @@ import 'src/pages/news/delegate/news_home_delegate.dart';
 
 Map<String, FairModuleBuilder> _generateModules() => {
       ShowFairToastModule.tagName: () => ShowFairToastModule(),
+      CFormFieldModule.tagName: () => CFormFieldModule(),
     };
 
 Map<String, FairDelegateBuilder> _generateDelegates() => {
       'home_page': (ctx, _) => HomePageDelegate(),
       'news_home_page': (ctx, _) => NewsHomeDelegate(),
+      'form_page': (ctx, _) => FormDelegate(),
     };
 
 void main() {
@@ -44,7 +49,9 @@ class MyApp extends StatelessWidget {
   }
 
   Map<String, WidgetBuilder> _generateRoutes() => {
+//        '/form_page': (_) => FormPage(),
         '/form_page': (_) => FairWidget(
+            name: 'form_page',
             path:
                 'http://192.168.31.249:1337/static/bundles/lib_src_pages_form_form_page.fair.json'),
 //        '/news_home_page': (_) => NewsHome(),

@@ -13,17 +13,138 @@
       }
     },
     "body": {
-      "className": "Center",
+      "className": "FormBuilder",
       "na": {
+        "key": "#(delegate.formKey)",
+        "onChanged": "#(delegate.formValuesChanged)",
+        "autovalidate": true,
+        "initialValue": "#(delegate.initialValue)",
         "child": {
-          "className": "Container",
+          "className": "Column",
           "na": {
-            "child": {
-              "className": "Text",
-              "pa": [
-                "表单示例"
-              ]
-            }
+            "crossAxisAlignment": "#(CrossAxisAlignment.start)",
+            "children": [
+              {
+                "className": "Padding",
+                "na": {
+                  "padding": {
+                    "className": "EdgeInsets.only",
+                    "na": {
+                      "top": 16,
+                      "left": 48,
+                      "right": 48
+                    }
+                  },
+                  "child": {
+                    "className": "Row",
+                    "na": {
+                      "children": [
+                        {
+                          "className": "Text",
+                          "pa": [
+                            "标题 : "
+                          ],
+                          "na": {
+                            "style": {
+                              "className": "TextStyle",
+                              "na": {
+                                "fontSize": 16
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "className": "Expanded",
+                          "na": {
+                            "child": {
+                              "className": "TextFormFieldBuilder",
+                              "na": {
+                                "attribute": "title"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Padding",
+                "na": {
+                  "padding": {
+                    "className": "EdgeInsets.only",
+                    "na": {
+                      "top": 16,
+                      "left": 48,
+                      "right": 48
+                    }
+                  },
+                  "child": {
+                    "className": "Row",
+                    "na": {
+                      "children": [
+                        {
+                          "className": "Text",
+                          "pa": [
+                            "内容 : "
+                          ],
+                          "na": {
+                            "style": {
+                              "className": "TextStyle",
+                              "na": {
+                                "fontSize": 16
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "className": "Expanded",
+                          "na": {
+                            "child": {
+                              "className": "TextFormFieldBuilder",
+                              "na": {
+                                "attribute": "content"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "className": "Padding",
+                "na": {
+                  "padding": {
+                    "className": "EdgeInsets.only",
+                    "na": {
+                      "left": 48,
+                      "right": 48,
+                      "top": 24
+                    }
+                  },
+                  "child": {
+                    "className": "RaisedButton",
+                    "na": {
+                      "onPressed": "#(delegate.onSubmit)",
+                      "child": {
+                        "className": "Center",
+                        "na": {
+                          "child": {
+                            "className": "Text",
+                            "pa": [
+                              "Submit"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           }
         }
       }

@@ -25,7 +25,7 @@ class NewsHomeDelegate extends FairDelegate {
   Map<String, PropertyValue> bindValue() {
     var pros = super.bindValue();
     pros.addAll({
-      'delegate.content': () => _title.value,
+      'delegate.title': () => _title.value,
       'delegate.tabs': () => tabs,
       'delegate.dataSources': () => dataSources,
       'delegate.tabLength': () => tabLength,
