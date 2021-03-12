@@ -11,8 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+#  fair:
+#    path: /Users/lwy/code_workspace/flutter/sanfang/fair/fair
   fair:
-    path: /Users/lwy/code_workspace/flutter/sanfang/fair/fair
+    git:
+      url: https://github.com/itlwy/fair.git
+      path: fair
 
   cupertino_icons: ^1.0.0
   smooth_star_rating: ^1.1.1
